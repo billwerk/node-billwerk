@@ -1,11 +1,11 @@
 {
   "name": "billwerk",
-  "version": "1.1.7",
+  "version": "1.1.8",
   "description": "Node wrapper for the billwerk.com api",
   "main": "dist/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/maxnowack/node-billwerk.git"
+    "url": "https://github.com/billwerk/node-billwerk.git"
   },
   "license": "MIT",
   "scripts": {
@@ -14,7 +14,7 @@
     "build": "babel src -d dist",
     "test": "npm run lint"
   },
-  "author": "Max Nowack <max@unsou.de>",
+  "author": "Axel Dünninger <axel@billwerk.com>",
   "files": [
     "dist"
   ],

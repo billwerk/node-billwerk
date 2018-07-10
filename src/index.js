@@ -142,10 +142,10 @@ export default class BillwerkAPI {
   }
 
   // /Contracts/:ContractId/ComponentSubscriptions/
-  getContractSubscriptions(contractId) {
+  getContractComponentSubscriptions(contractId) {
     return this.call(`/Contracts/${contractId}/ComponentSubscriptions`, 'GET');
   }
-  createContractSubscription(contractId, data) {
+  createContractComponentSubscription(contractId, data) {
     return this.call(`/Contracts/${contractId}/ComponentSubscriptions`, 'POST', { data });
   }
 
