@@ -1,6 +1,6 @@
 {
   "name": "billwerk",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Node wrapper for the billwerk API: https://developer.billwerk.io/Docs/ApiReference",
   "main": "dist/index.js",
   "repository": {
