@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 import fetch from 'node-fetch';
 import basicAuth from 'basic-auth-header';
 
