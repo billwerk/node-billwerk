@@ -16,7 +16,7 @@ export default class BillwerkAPI {
   static request = request
 
   getApiUrl(short = false) {
-    return `https://${this.billwerkHost}${!short ? this.apiPath : ''}`;
+    return `http${this.useHttps ? 's' : ''}://${this.billwerkHost}${!short ? this.apiPath : ''}`;
   }
 
   checkAuth(force = false) {
@@ -72,12 +72,13 @@ export default class BillwerkAPI {
    *  or 'app.billwerk.com'
    * @param {string} apiPath '/api/v1' (default)
    */
-  constructor(clientId, clientSecret, billwerkHost = 'sandbox.billwerk.com', apiPath = '/api/v1') {
+  constructor(clientId, clientSecret, billwerkHost = 'sandbox.billwerk.com', apiPath = '/api/v1', useHttps = true) {
     this.events = {};
     this.clientId = clientId;
     this.clientSecret = clientSecret;
     this.billwerkHost = billwerkHost;
     this.apiPath = apiPath;
+    this.useHttps = useHttps;
   }
 
   // /Orders
