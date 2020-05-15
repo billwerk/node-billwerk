@@ -62,6 +62,9 @@ component subscriptions and discount subscriptions</p>
 <dt><a href="#getContractSelfServiceToken">getContractSelfServiceToken(contractId)</a></dt>
 <dd><p>Retrieve a short-lived selfservice access token</p>
 </dd>
+<dt><a href="#getContractCancellationPreview">getContractCancellationPreview(contractId)</a></dt>
+<dd><p>Retrieves a cancellation preview for a contract for a regular cancellation, considering contract and notice periods of the booked PlanVariant.</p>
+</dd>
 <dt><a href="#endContract">endContract(contractId, data)</a></dt>
 <dd><p>Set an enddate for this contract</p>
 </dd>
