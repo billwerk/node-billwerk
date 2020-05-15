@@ -268,11 +268,12 @@ export default class BillwerkAPI {
 
   // /Contracts/{contractId}/cancellationPreview
   /**
-   * Retrieves a cancellation preview for a contract for a regular cancellation, considering contract and notice periods of the booked PlanVariant.
+   * Retrieves a cancellation preview for a contract for a regular cancellation,
+   * considering contract and notice periods of the booked PlanVariant.
    * @param {string} contractId Contract ID
    */
   getContractCancellationPreview(contractId) {
-      return this.call(`/Contracts/${contractId}/cancellationPreview`, 'GET');
+    return this.call(`/Contracts/${contractId}/cancellationPreview`, 'GET');
   }
 
   // /Contracts/{contractId}/end
