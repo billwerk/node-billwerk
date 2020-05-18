@@ -266,6 +266,16 @@ export default class BillwerkAPI {
     return this.call(`/Contracts/${contractId}/SelfServiceToken`, 'GET');
   }
 
+  // /Contracts/{contractId}/cancellationPreview
+  /**
+   * Retrieves a cancellation preview for a contract for a regular cancellation,
+   * considering contract and notice periods of the booked PlanVariant.
+   * @param {string} contractId Contract ID
+   */
+  getContractCancellationPreview(contractId) {
+    return this.call(`/Contracts/${contractId}/cancellationPreview`, 'GET');
+  }
+
   // /Contracts/{contractId}/end
   /**
    * Set an enddate for this contract
