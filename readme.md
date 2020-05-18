@@ -63,7 +63,8 @@ component subscriptions and discount subscriptions</p>
 <dd><p>Retrieve a short-lived selfservice access token</p>
 </dd>
 <dt><a href="#getContractCancellationPreview">getContractCancellationPreview(contractId)</a></dt>
-<dd><p>Retrieves a cancellation preview for a contract for a regular cancellation, considering contract and notice periods of the booked PlanVariant.</p>
+<dd><p>Retrieves a cancellation preview for a contract for a regular cancellation,
+considering contract and notice periods of the booked PlanVariant.</p>
 </dd>
 <dt><a href="#endContract">endContract(contractId, data)</a></dt>
 <dd><p>Set an enddate for this contract</p>
@@ -92,6 +93,12 @@ component subscriptions and discount subscriptions</p>
 <dt><a href="#sendInvoiceDraft">sendInvoiceDraft(invoiceDraftId)</a></dt>
 <dd><p>Sends the given invoice draft id, thus converting it to an invoice.
 Returns the newly created invoice</p>
+</dd>
+<dt><a href="#getPlanGroups">getPlanGroups()</a></dt>
+<dd><p>Retrieves a list of plan groups</p>
+</dd>
+<dt><a href="#getPlanGroup">getPlanGroup(planGroupId)</a></dt>
+<dd><p>Retrieves a single Plangroup by ID</p>
 </dd>
 <dt><a href="#getPlans">getPlans()</a></dt>
 <dd><p>Retrieve a list of available plans</p>
@@ -332,6 +339,17 @@ Retrieve a short-lived selfservice access token
 | --- | --- | --- |
 | contractId | <code>string</code> | Contract ID |
 
+<a name="getContractCancellationPreview"></a>
+
+## getContractCancellationPreview(contractId)
+considering contract and notice periods of the booked PlanVariant.ellation,
+
+**Kind**: global function
+
+| Param | Type | Description |
+| --- | --- | --- |
+| contractId | <code>string</code> | Contract ID |
+
 <a name="endContract"></a>
 
 ## endContract(contractId, data)
@@ -417,6 +435,23 @@ Returns the newly created invoice thus converting it to an invoice.
 | Param | Type | Description |
 | --- | --- | --- |
 | invoiceDraftId | <code>string</code> | Invoice Draft ID |
+
+<a name="getPlanGroups"></a>
+
+## getPlanGroups()
+Retrieves a list of plan groups
+
+**Kind**: global function
+<a name="getPlanGroup"></a>
+
+## getPlanGroup(planGroupId)
+Retrieves a single Plangroup by ID
+
+**Kind**: global function
+
+| Param | Type |
+| --- | --- |
+| planGroupId | <code>string</code> |
 
 <a name="getPlans"></a>
 
