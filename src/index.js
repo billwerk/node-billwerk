@@ -283,7 +283,7 @@ export default class BillwerkAPI {
    * @param {*} data ContractEndDTO
    */
   endContract(contractId, data) {
-    return this.call(`/Contract/${contractId}/end`, 'POST', { data });
+    return this.call(`/Contracts/${contractId}/end`, 'POST', { data });
   }
 
   // /Contracts/{contractId}/ratedItems
@@ -293,7 +293,7 @@ export default class BillwerkAPI {
    * @param {*} data RatedItemCreateDTO
    */
   createContractRatedItem(contractId, data) {
-    return this.call(`/Contract/${contractId}/ratedItems`, 'POST', { data });
+    return this.call(`/Contracts/${contractId}/ratedItems`, 'POST', { data });
   }
 
   // /Subscriptions
@@ -358,10 +358,17 @@ export default class BillwerkAPI {
   }
 
   // /PlanGroups
+  /**
+   * Retrieves a list of plan groups
+   */
   getPlanGroups() {
     return this.call('/PlanGroups', 'GET');
   }
 
+  /**
+   * Retrieves a single Plangroup by ID
+   * @param {string} planGroupId 
+   */
   getPlanGroup(planGroupId) {
     return this.call(`/PlanGroups/${planGroupId}`, 'GET');
   }
