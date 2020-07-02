@@ -8,4 +8,4 @@ export default (url, options) => fetch(url, {
     Authorization: basicAuth(options.auth.user, options.auth.pass),
   }),
   body: typeof options.body === 'string' ? options.body : JSON.stringify(options.body),
-}).then(res => res.json());
+}).then((res) => res.json());

@@ -19,9 +19,6 @@
     "dist"
   ],
   "eslintConfig": {
-    "extends": [
-      "airbnb-base"
-    ],
     "parser": "babel-eslint"
   },
   "babel": {
@@ -41,12 +38,11 @@
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
-    "babel-eslint": "^8.2.6",
+    "babel-eslint": "^10.1.0",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-preset-env": "^1.7.0",
-    "eslint": "^4.19.1",
-    "eslint-config-airbnb-base": "^12.1.0",
-    "eslint-plugin-babel": "^4.1.2",
+    "eslint": "^7.3.1",
+    "eslint-plugin-babel": "^5.3.1",
     "eslint-plugin-import": "^2.22.0"
   },
   "dependencies": {

@@ -21,7 +21,7 @@ export default class BillwerkAPI {
 
   checkAuth(force = false) {
     if (this.authToken && !force) {
-      return new Promise(r => r(this.authToken));
+      return new Promise((r) => r(this.authToken));
     }
     return BillwerkAPI.request(`${this.getApiUrl(true)}/oauth/token`, {
       method: 'post',
@@ -55,7 +55,7 @@ export default class BillwerkAPI {
       .then((data) => {
         if (!Array.isArray(data)) return data;
         if (!data || !data.length) return oldData;
-        const idExists = !!oldData.filter(item => item.Id === data[0].Id).length;
+        const idExists = !!oldData.filter((item) => item.Id === data[0].Id).length;
         if (idExists) return oldData;
         if (data.length >= take) {
           return this.call(action, method, options, (skip || 0) + 500, take, oldData.concat(data));
@@ -372,7 +372,6 @@ export default class BillwerkAPI {
   getPlanGroup(planGroupId) {
     return this.call(`/PlanGroups/${planGroupId}`, 'GET');
   }
-
 
   // /Plans
   /**
