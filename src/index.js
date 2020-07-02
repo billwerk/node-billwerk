@@ -367,7 +367,7 @@ export default class BillwerkAPI {
 
   /**
    * Retrieves a single Plangroup by ID
-   * @param {string} planGroupId 
+   * @param {string} planGroupId
    */
   getPlanGroup(planGroupId) {
     return this.call(`/PlanGroups/${planGroupId}`, 'GET');
